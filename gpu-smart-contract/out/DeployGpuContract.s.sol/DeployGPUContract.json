@@ -1,0 +1,664 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "IS_SCRIPT",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "run",
+      "outputs": [
+        {
+          "internalType": "contract GPUSharingContract",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405260048054600160ff199182168117909255600c8054909116909117905534801561002d57600080fd5b50610cfd8061003d6000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063c04062261461003b578063f8ccbf4714610060575b600080fd5b61004361007d565b6040516001600160a01b0390911681526020015b60405180910390f35b600c5461006d9060ff1681565b6040519015158152602001610057565b60007f885cb69240a935d632d79c317109709ecfa91a80626ff3989d68f67f5b1dd12d60001c6001600160a01b0316637fb5297f6040518163ffffffff1660e01b8152600401600060405180830381600087803b1580156100dd57600080fd5b505af11580156100f1573d6000803e3d6000fd5b5050505060006040516101039061019e565b604051809103906000f08015801561011f573d6000803e3d6000fd5b5090507f885cb69240a935d632d79c317109709ecfa91a80626ff3989d68f67f5b1dd12d60001c6001600160a01b03166376eadd366040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561018057600080fd5b505af1158015610194573d6000803e3d6000fd5b5092949350505050565b610b1c806101ac8339019056fe608060405234801561001057600080fd5b50610afc806100206000396000f3fe6080604052600436106100865760003560e01c80637c0390f7116100595780637c0390f7146101765780638b74097514610196578063b596a15e146101b6578063dc35a900146101c9578063f69f1e4a146101e957600080fd5b8063474d3ff01461008b5780634ac8eb5f1461011b57806359c153be1461013f5780636348562514610156575b600080fd5b34801561009757600080fd5b506100e26100a63660046109d6565b600060208190529081526040902080546001820154600283015460038401546004909401546001600160a01b0390931693919290919060ff1685565b604080516001600160a01b03909616865260208601949094529284019190915260608301521515608082015260a0015b60405180910390f35b34801561012757600080fd5b5061013160025481565b604051908152602001610112565b34801561014b57600080fd5b50610154610216565b005b34801561016257600080fd5b506101316101713660046109d6565b6102b7565b34801561018257600080fd5b506101546101913660046109d6565b61047c565b3480156101a257600080fd5b506100e26101b13660046109d6565b6105e3565b6101546101c43660046109d6565b610622565b3480156101d557600080fd5b506101546101e43660046109ef565b61075e565b3480156101f557600080fd5b50610131610204366004610a1b565b60016020526000908152604090205481565b33600090815260016020526040902054806102785760405162461bcd60e51b815260206004820152601960248201527f4e6f20636f6c6c61746572616c20746f2077697468647261770000000000000060448201526064015b60405180910390fd5b336000818152600160205260408082208290555183156108fc0291849190818181858888f193505050501580156102b3573d6000803e3d6000fd5b5050565b60008060006102c5846105e3565b509294509192506064915060089050601060048260006102e986838686828c6108fd565b3360009081526001602052604090205490915081111561034b5760405162461bcd60e51b815260206004820152601760248201527f496e73756666696369656e7420636f6c6c61746572616c000000000000000000604482015260640161026f565b336000908152600160205260408120805483929061036a908490610a61565b9250508190555080600260008282546103839190610a7a565b90915550506040516000906001600160a01b038a169083908381818185875af1925050503d80600081146103d3576040519150601f19603f3d011682016040523d82523d6000602084013e6103d8565b606091505b50509050806104205760405162461bcd60e51b81526020600482015260146024820152732330b4b632b2103a379039b2b7321022ba3432b960611b604482015260640161026f565b604080518c81523360208201526001600160a01b038b16818301526060810184905290517fbfeae722deab5b34e41d6867882cfdbe3e53c6fa2701c3d62fe607cfb90482ce9181900360800190a1509998505050505050505050565b60008181526020819052604090205481906001600160a01b031633146104f65760405162461bcd60e51b815260206004820152602960248201527f4f6e6c79207468652070726f76696465722063616e20706572666f726d20746860448201526834b99030b1ba34b7b760b91b606482015260840161026f565b60008281526020819052604090206003015442111561054b5760405162461bcd60e51b815260206004820152601160248201527013d999995c881a185cc8195e1c1a5c9959607a1b604482015260640161026f565b6000610556836102b7565b600084815260208181526040808320546001600160a01b03168352600190915281208054929350839290919061058d908490610a7a565b909155505060008381526020818152604091829020600401805460ff1916905590518481527f572a2b6ee4b829f7c9a4b27bd7729666696a0b5e394e1a9ad92e925e483f02c291015b60405180910390a1505050565b600090815260208190526040902080546001820154600283015460038401546004909401546001600160a01b039093169491939092909160ff90911690565b600081815260208190526040902060040154819060ff16801561065657506000818152602081905260409020600301544211155b6106a25760405162461bcd60e51b815260206004820152601960248201527f4f66666572206973206e6f206c6f6e6765722061637469766500000000000000604482015260640161026f565b600082815260208190526040902060028101543410156106fb5760405162461bcd60e51b8152602060048201526014602482015273125b9cdd59999a58da595b9d081c185e5b595b9d60621b604482015260640161026f565b336000908152600160205260408120805434929061071a908490610a7a565b90915550506040805184815233602082015234918101919091527f7947ab5451d15b3e5f5cb9d87332b123805e40d2e0e2f689ed5d387a89c56da5906060016105d6565b60008311801561076e5750600082115b801561077a5750600081115b6107bb5760405162461bcd60e51b8152602060048201526012602482015271496e76616c696420706172616d657465727360701b604482015260640161026f565b6040516bffffffffffffffffffffffff193360601b166020820152603481018490526054810183905242607482015260009060940160408051601f19818403018152828252805160209182012060a08401835233845290830187905290820185905291506060810161082f84610e10610a8d565b6108399042610a7a565b8152600160209182018190526000848152808352604090819020845181546001600160a01b0319166001600160a01b039091161781558484015192810192909255838101516002830155606080850151600384018190556080958601516004909401805460ff191694151594909417909355815186815233948101949094529083018890528201869052918101919091527f6ea3a64e6fe5dc466d27b488f5b70d3776a5a90a18dfcae99c3bc11a41e142f39060a00160405180910390a150505050565b60008061090a8885610a8d565b6109148987610a8d565b61091e8a89610a8d565b6109288b8b610a8d565b6109329190610a7a565b61093c9190610a7a565b6109469190610a7a565b9050426000848211610958578161095a565b845b90506000610e1061096b8484610a61565b6109759190610aa4565b905060006109838286610a8d565b9050600081116109c75760405162461bcd60e51b815260206004820152600f60248201526e5061796d656e74206973207a65726f60881b604482015260640161026f565b9b9a5050505050505050505050565b6000602082840312156109e857600080fd5b5035919050565b600080600060608486031215610a0457600080fd5b505081359360208301359350604090920135919050565b600060208284031215610a2d57600080fd5b81356001600160a01b0381168114610a4457600080fd5b9392505050565b634e487b7160e01b600052601160045260246000fd5b81810381811115610a7457610a74610a4b565b92915050565b80820180821115610a7457610a74610a4b565b8082028115828204841417610a7457610a74610a4b565b600082610ac157634e487b7160e01b600052601260045260246000fd5b50049056fea2646970667358221220f3b46a43c3f396d1a2ec2fb69eb07f5a3e182d0ff9cded1574aedcb1bfd3633c64736f6c63430008140033a2646970667358221220edba180305002e6764ecc8fe56ddae461b42d39333a12d0796373d42716fe78a64736f6c63430008140033",
+    "sourceMap": "176:268:19:-:0;;;3126:44:4;;;3166:4;-1:-1:-1;;3126:44:4;;;;;;;;800:28:2;;;;;;;;;;;176:268:19;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063c04062261461003b578063f8ccbf4714610060575b600080fd5b61004361007d565b6040516001600160a01b0390911681526020015b60405180910390f35b600c5461006d9060ff1681565b6040519015158152602001610057565b60007f885cb69240a935d632d79c317109709ecfa91a80626ff3989d68f67f5b1dd12d60001c6001600160a01b0316637fb5297f6040518163ffffffff1660e01b8152600401600060405180830381600087803b1580156100dd57600080fd5b505af11580156100f1573d6000803e3d6000fd5b5050505060006040516101039061019e565b604051809103906000f08015801561011f573d6000803e3d6000fd5b5090507f885cb69240a935d632d79c317109709ecfa91a80626ff3989d68f67f5b1dd12d60001c6001600160a01b03166376eadd366040518163ffffffff1660e01b8152600401600060405180830381600087803b15801561018057600080fd5b505af1158015610194573d6000803e3d6000fd5b5092949350505050565b610b1c806101ac8339019056fe608060405234801561001057600080fd5b50610afc806100206000396000f3fe6080604052600436106100865760003560e01c80637c0390f7116100595780637c0390f7146101765780638b74097514610196578063b596a15e146101b6578063dc35a900146101c9578063f69f1e4a146101e957600080fd5b8063474d3ff01461008b5780634ac8eb5f1461011b57806359c153be1461013f5780636348562514610156575b600080fd5b34801561009757600080fd5b506100e26100a63660046109d6565b600060208190529081526040902080546001820154600283015460038401546004909401546001600160a01b0390931693919290919060ff1685565b604080516001600160a01b03909616865260208601949094529284019190915260608301521515608082015260a0015b60405180910390f35b34801561012757600080fd5b5061013160025481565b604051908152602001610112565b34801561014b57600080fd5b50610154610216565b005b34801561016257600080fd5b506101316101713660046109d6565b6102b7565b34801561018257600080fd5b506101546101913660046109d6565b61047c565b3480156101a257600080fd5b506100e26101b13660046109d6565b6105e3565b6101546101c43660046109d6565b610622565b3480156101d557600080fd5b506101546101e43660046109ef565b61075e565b3480156101f557600080fd5b50610131610204366004610a1b565b60016020526000908152604090205481565b33600090815260016020526040902054806102785760405162461bcd60e51b815260206004820152601960248201527f4e6f20636f6c6c61746572616c20746f2077697468647261770000000000000060448201526064015b60405180910390fd5b336000818152600160205260408082208290555183156108fc0291849190818181858888f193505050501580156102b3573d6000803e3d6000fd5b5050565b60008060006102c5846105e3565b509294509192506064915060089050601060048260006102e986838686828c6108fd565b3360009081526001602052604090205490915081111561034b5760405162461bcd60e51b815260206004820152601760248201527f496e73756666696369656e7420636f6c6c61746572616c000000000000000000604482015260640161026f565b336000908152600160205260408120805483929061036a908490610a61565b9250508190555080600260008282546103839190610a7a565b90915550506040516000906001600160a01b038a169083908381818185875af1925050503d80600081146103d3576040519150601f19603f3d011682016040523d82523d6000602084013e6103d8565b606091505b50509050806104205760405162461bcd60e51b81526020600482015260146024820152732330b4b632b2103a379039b2b7321022ba3432b960611b604482015260640161026f565b604080518c81523360208201526001600160a01b038b16818301526060810184905290517fbfeae722deab5b34e41d6867882cfdbe3e53c6fa2701c3d62fe607cfb90482ce9181900360800190a1509998505050505050505050565b60008181526020819052604090205481906001600160a01b031633146104f65760405162461bcd60e51b815260206004820152602960248201527f4f6e6c79207468652070726f76696465722063616e20706572666f726d20746860448201526834b99030b1ba34b7b760b91b606482015260840161026f565b60008281526020819052604090206003015442111561054b5760405162461bcd60e51b815260206004820152601160248201527013d999995c881a185cc8195e1c1a5c9959607a1b604482015260640161026f565b6000610556836102b7565b600084815260208181526040808320546001600160a01b03168352600190915281208054929350839290919061058d908490610a7a565b909155505060008381526020818152604091829020600401805460ff1916905590518481527f572a2b6ee4b829f7c9a4b27bd7729666696a0b5e394e1a9ad92e925e483f02c291015b60405180910390a1505050565b600090815260208190526040902080546001820154600283015460038401546004909401546001600160a01b039093169491939092909160ff90911690565b600081815260208190526040902060040154819060ff16801561065657506000818152602081905260409020600301544211155b6106a25760405162461bcd60e51b815260206004820152601960248201527f4f66666572206973206e6f206c6f6e6765722061637469766500000000000000604482015260640161026f565b600082815260208190526040902060028101543410156106fb5760405162461bcd60e51b8152602060048201526014602482015273125b9cdd59999a58da595b9d081c185e5b595b9d60621b604482015260640161026f565b336000908152600160205260408120805434929061071a908490610a7a565b90915550506040805184815233602082015234918101919091527f7947ab5451d15b3e5f5cb9d87332b123805e40d2e0e2f689ed5d387a89c56da5906060016105d6565b60008311801561076e5750600082115b801561077a5750600081115b6107bb5760405162461bcd60e51b8152602060048201526012602482015271496e76616c696420706172616d657465727360701b604482015260640161026f565b6040516bffffffffffffffffffffffff193360601b166020820152603481018490526054810183905242607482015260009060940160408051601f19818403018152828252805160209182012060a08401835233845290830187905290820185905291506060810161082f84610e10610a8d565b6108399042610a7a565b8152600160209182018190526000848152808352604090819020845181546001600160a01b0319166001600160a01b039091161781558484015192810192909255838101516002830155606080850151600384018190556080958601516004909401805460ff191694151594909417909355815186815233948101949094529083018890528201869052918101919091527f6ea3a64e6fe5dc466d27b488f5b70d3776a5a90a18dfcae99c3bc11a41e142f39060a00160405180910390a150505050565b60008061090a8885610a8d565b6109148987610a8d565b61091e8a89610a8d565b6109288b8b610a8d565b6109329190610a7a565b61093c9190610a7a565b6109469190610a7a565b9050426000848211610958578161095a565b845b90506000610e1061096b8484610a61565b6109759190610aa4565b905060006109838286610a8d565b9050600081116109c75760405162461bcd60e51b815260206004820152600f60248201526e5061796d656e74206973207a65726f60881b604482015260640161026f565b9b9a5050505050505050505050565b6000602082840312156109e857600080fd5b5035919050565b600080600060608486031215610a0457600080fd5b505081359360208301359350604090920135919050565b600060208284031215610a2d57600080fd5b81356001600160a01b0381168114610a4457600080fd5b9392505050565b634e487b7160e01b600052601160045260246000fd5b81810381811115610a7457610a74610a4b565b92915050565b80820180821115610a7457610a74610a4b565b8082028115828204841417610a7457610a74610a4b565b600082610ac157634e487b7160e01b600052601260045260246000fd5b50049056fea2646970667358221220f3b46a43c3f396d1a2ec2fb69eb07f5a3e182d0ff9cded1574aedcb1bfd3633c64736f6c63430008140033a2646970667358221220edba180305002e6764ecc8fe56ddae461b42d39333a12d0796373d42716fe78a64736f6c63430008140033",
+    "sourceMap": "176:268:19:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;218:224;;;:::i;:::-;;;-1:-1:-1;;;;;206:32:22;;;188:51;;176:2;161:18;218:224:19;;;;;;;;800:28:2;;;;;;;;;;;;415:14:22;;408:22;390:41;;378:2;363:18;800:28:2;250:187:22;218:224:19;250:18;317:28:1;309:37;;-1:-1:-1;;;;;279:17:19;;:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;308:37;348:24;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;308:64;;317:28:1;309:37;;-1:-1:-1;;;;;382:16:19;;:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;417:18:19;;218:224;-1:-1:-1;;;;218:224:19:o;-1:-1:-1:-;;;;;;;;:::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "IS_SCRIPT()": "f8ccbf47",
+    "run()": "c0406226"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"IS_SCRIPT\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"run\",\"outputs\":[{\"internalType\":\"contract GPUSharingContract\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"script/DeployGpuContract.s.sol\":\"DeployGPUContract\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"lib/forge-std/src/Base.sol\":{\"keccak256\":\"0x4ff1a785311017d1eedb1b4737956fa383067ad34eb439abfec1d989754dde1c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f553622969b9fdb930246704a4c10dfaee6b1a4468c142fa7eb9dc292a438224\",\"dweb:/ipfs/QmcxqHnqdQsMVtgsfH9VNLmZ3g7GhgNagfq7yvNCDcCHFK\"]},\"lib/forge-std/src/Script.sol\":{\"keccak256\":\"0x0bded803c7e28336785fa600f03035e61d0b689bba2f014b1720e576c5ee3307\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://407f3979f460cc60bc7e4ce6fd7da4facac9f52623b4d6805052538d897eab9b\",\"dweb:/ipfs/QmSRhYNywsJhtYEYyPM1izGNsP1SBzxsXwLfcQnFF5NA9p\"]},\"lib/forge-std/src/StdChains.sol\":{\"keccak256\":\"0x51e6eb138fc953fac1ac78012a39b3f16d9289ce06a222ba93bb0621768f96e6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://653c577e054cf578594148a07b286571d494f401b6d4a940d3ccabd47b29233d\",\"dweb:/ipfs/QmTWDVvR4m82MGXWYY8BCaVN89TguQJSLqRgzHzrMkFHtx\"]},\"lib/forge-std/src/StdCheats.sol\":{\"keccak256\":\"0x2e1b4b99283c16efaf155f7e55ea357943cf6e61fc02aad060534349f63b6cd5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d471a35903e8a367a145ca5b5955caf691c723fe1117c6dcffd928d9f8d7c95a\",\"dweb:/ipfs/QmXGnFUGiX9APL8xit7NZQEYBoEL3wWyW1YyFoJQd2pGPe\"]},\"lib/forge-std/src/StdJson.sol\":{\"keccak256\":\"0x9e2a7521190c462a0667706385f1c52a816220a9813ca8ac520fba7ba45d660b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7d23017fe6570b28130a731b86179352b93a5fb5af32f11559837afc1186293c\",\"dweb:/ipfs/QmR3p6zG5Kmcr8gKocFCSopLHfXv1AziPJbH17nKyMxwxV\"]},\"lib/forge-std/src/StdMath.sol\":{\"keccak256\":\"0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92\",\"dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC\"]},\"lib/forge-std/src/StdStorage.sol\":{\"keccak256\":\"0x391a28a2e54aea51a6fb03a3a48035304ca4d24bc669ddf3d4c152c7162e514d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://475fd0d87ccb0fdc4418dea2babffb4adb4aafb817e61f7ef31c2303f10c6c26\",\"dweb:/ipfs/QmQgcgtZxpkW6DRmbJszN1F8mU6zhaTZGdWWsj77yCuWN9\"]},\"lib/forge-std/src/StdStyle.sol\":{\"keccak256\":\"0x43e2a8a9b9c2574dabe74f11adf6f782df218f463540e3b5b563609fe108597d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://51363ca97404cf4128e1141428949768c31929e75e014b02c85e887fbbb4f1b8\",\"dweb:/ipfs/QmVhtbQc2fU4rRmbcfBtz34mAgG4BAZBsbna1Ca4SkoPsK\"]},\"lib/forge-std/src/StdUtils.sol\":{\"keccak256\":\"0x8758c42ba9d9e46868b796e2330ac239006ede07bd438a4b36dd6f2c47d27dc1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://11f5752e0187b1e3631b875efdbe05d45929d05f1c1717105a9115d0a6628140\",\"dweb:/ipfs/QmUKkx9jfsUvjyYBw45RvrW1hTFXDXi2Jv5tbHP86mnzpi\"]},\"lib/forge-std/src/Vm.sol\":{\"keccak256\":\"0xb569d0b4398fad95f508fb854e832143edf69a897af4250f5f60fe195a2066c5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://84b722ada97ea7bb841cdc0fa556aa36a02ff2d380fa24f6dc0717a71c6d9c7c\",\"dweb:/ipfs/QmfCH9Q4tvJhPM286GFsE4UCP4YncLpRu4Nwa2ZkHdRfbw\"]},\"lib/forge-std/src/console.sol\":{\"keccak256\":\"0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70\",\"dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec\"]},\"lib/forge-std/src/console2.sol\":{\"keccak256\":\"0x954646445d1014c3cd85c7918f5e7adeeca5ee44b68c00bafa237e597a4e35ea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://516fa3be52da4763147175bfba4be0aa011fadbb0c1afb01f97265bd4cee7973\",\"dweb:/ipfs/QmdixAyMJefx7qePChgdxcBH5MxhmN7vsqPuPLx3CgrVmF\"]},\"lib/forge-std/src/interfaces/IMulticall3.sol\":{\"keccak256\":\"0x7aac1389150499a922d1f9ef5749c908cef127cb2075b92fa17e9cb611263d0a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d95ebb7c7c463e08ebc12dab639945752fb2480acfc6e86da32f72732a7fd0c0\",\"dweb:/ipfs/QmNXK8P8oPWwajsQHvAHw3JPyQidPLCGQN3hWu1Lk6PBL2\"]},\"lib/forge-std/src/safeconsole.sol\":{\"keccak256\":\"0xbaf41fdc6c54297e7cd8250e48b0f20eaac918e342a1028cef3f9a52ac086381\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a500ad81dea226f9910e6b50f99a9ff930105e393a692cbfb2185e4cdb4424ae\",\"dweb:/ipfs/QmVbUQpXNMmMWRiy4FvBNczzq46BMGfUoBikvSHNiCxVTq\"]},\"script/DeployGpuContract.s.sol\":{\"keccak256\":\"0x1ebf5d1bafe6ef1202aeadfffd32cfeae9ddf188a835d998818dab3b400a5061\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://7203f2db8fc30f828fe1b501dd9177a05125d0e3ec585b5141ca7de5a483fd11\",\"dweb:/ipfs/QmVQTsaFj7EdV9qdfkKaNNYvWUmj8cYwoKAzZ2tTn1avFW\"]},\"src/GPUSharingContract.sol\":{\"keccak256\":\"0x476ebe4c891a89c05673a325f1292223376bfe1f13f13b06744dcb1db58b8285\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://cb4aa4a7f15ddac5102f94edf7a24a96cf6f9e37d26118820fef4fda4947a4d2\",\"dweb:/ipfs/QmPfbLbAMAKaSDJbKR2rQCEAZNRuudhVLqJrfCGT1wjY5p\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "IS_SCRIPT",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "run",
+          "outputs": [
+            {
+              "internalType": "contract GPUSharingContract",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "script/DeployGpuContract.s.sol": "DeployGPUContract"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/forge-std/src/Base.sol": {
+        "keccak256": "0x4ff1a785311017d1eedb1b4737956fa383067ad34eb439abfec1d989754dde1c",
+        "urls": [
+          "bzz-raw://f553622969b9fdb930246704a4c10dfaee6b1a4468c142fa7eb9dc292a438224",
+          "dweb:/ipfs/QmcxqHnqdQsMVtgsfH9VNLmZ3g7GhgNagfq7yvNCDcCHFK"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/Script.sol": {
+        "keccak256": "0x0bded803c7e28336785fa600f03035e61d0b689bba2f014b1720e576c5ee3307",
+        "urls": [
+          "bzz-raw://407f3979f460cc60bc7e4ce6fd7da4facac9f52623b4d6805052538d897eab9b",
+          "dweb:/ipfs/QmSRhYNywsJhtYEYyPM1izGNsP1SBzxsXwLfcQnFF5NA9p"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdChains.sol": {
+        "keccak256": "0x51e6eb138fc953fac1ac78012a39b3f16d9289ce06a222ba93bb0621768f96e6",
+        "urls": [
+          "bzz-raw://653c577e054cf578594148a07b286571d494f401b6d4a940d3ccabd47b29233d",
+          "dweb:/ipfs/QmTWDVvR4m82MGXWYY8BCaVN89TguQJSLqRgzHzrMkFHtx"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdCheats.sol": {
+        "keccak256": "0x2e1b4b99283c16efaf155f7e55ea357943cf6e61fc02aad060534349f63b6cd5",
+        "urls": [
+          "bzz-raw://d471a35903e8a367a145ca5b5955caf691c723fe1117c6dcffd928d9f8d7c95a",
+          "dweb:/ipfs/QmXGnFUGiX9APL8xit7NZQEYBoEL3wWyW1YyFoJQd2pGPe"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdJson.sol": {
+        "keccak256": "0x9e2a7521190c462a0667706385f1c52a816220a9813ca8ac520fba7ba45d660b",
+        "urls": [
+          "bzz-raw://7d23017fe6570b28130a731b86179352b93a5fb5af32f11559837afc1186293c",
+          "dweb:/ipfs/QmR3p6zG5Kmcr8gKocFCSopLHfXv1AziPJbH17nKyMxwxV"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdMath.sol": {
+        "keccak256": "0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2",
+        "urls": [
+          "bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92",
+          "dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdStorage.sol": {
+        "keccak256": "0x391a28a2e54aea51a6fb03a3a48035304ca4d24bc669ddf3d4c152c7162e514d",
+        "urls": [
+          "bzz-raw://475fd0d87ccb0fdc4418dea2babffb4adb4aafb817e61f7ef31c2303f10c6c26",
+          "dweb:/ipfs/QmQgcgtZxpkW6DRmbJszN1F8mU6zhaTZGdWWsj77yCuWN9"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdStyle.sol": {
+        "keccak256": "0x43e2a8a9b9c2574dabe74f11adf6f782df218f463540e3b5b563609fe108597d",
+        "urls": [
+          "bzz-raw://51363ca97404cf4128e1141428949768c31929e75e014b02c85e887fbbb4f1b8",
+          "dweb:/ipfs/QmVhtbQc2fU4rRmbcfBtz34mAgG4BAZBsbna1Ca4SkoPsK"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/StdUtils.sol": {
+        "keccak256": "0x8758c42ba9d9e46868b796e2330ac239006ede07bd438a4b36dd6f2c47d27dc1",
+        "urls": [
+          "bzz-raw://11f5752e0187b1e3631b875efdbe05d45929d05f1c1717105a9115d0a6628140",
+          "dweb:/ipfs/QmUKkx9jfsUvjyYBw45RvrW1hTFXDXi2Jv5tbHP86mnzpi"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/Vm.sol": {
+        "keccak256": "0xb569d0b4398fad95f508fb854e832143edf69a897af4250f5f60fe195a2066c5",
+        "urls": [
+          "bzz-raw://84b722ada97ea7bb841cdc0fa556aa36a02ff2d380fa24f6dc0717a71c6d9c7c",
+          "dweb:/ipfs/QmfCH9Q4tvJhPM286GFsE4UCP4YncLpRu4Nwa2ZkHdRfbw"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/console.sol": {
+        "keccak256": "0x91d5413c2434ca58fd278b6e1e79fd98d10c83931cc2596a6038eee4daeb34ba",
+        "urls": [
+          "bzz-raw://91ccea707361e48b9b7a161fe81f496b9932bc471e9c4e4e1e9c283f2453cc70",
+          "dweb:/ipfs/QmcB66sZhQ6Kz7MUHcLE78YXRUZxoZnnxZjN6yATsbB2ec"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/console2.sol": {
+        "keccak256": "0x954646445d1014c3cd85c7918f5e7adeeca5ee44b68c00bafa237e597a4e35ea",
+        "urls": [
+          "bzz-raw://516fa3be52da4763147175bfba4be0aa011fadbb0c1afb01f97265bd4cee7973",
+          "dweb:/ipfs/QmdixAyMJefx7qePChgdxcBH5MxhmN7vsqPuPLx3CgrVmF"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/interfaces/IMulticall3.sol": {
+        "keccak256": "0x7aac1389150499a922d1f9ef5749c908cef127cb2075b92fa17e9cb611263d0a",
+        "urls": [
+          "bzz-raw://d95ebb7c7c463e08ebc12dab639945752fb2480acfc6e86da32f72732a7fd0c0",
+          "dweb:/ipfs/QmNXK8P8oPWwajsQHvAHw3JPyQidPLCGQN3hWu1Lk6PBL2"
+        ],
+        "license": "MIT"
+      },
+      "lib/forge-std/src/safeconsole.sol": {
+        "keccak256": "0xbaf41fdc6c54297e7cd8250e48b0f20eaac918e342a1028cef3f9a52ac086381",
+        "urls": [
+          "bzz-raw://a500ad81dea226f9910e6b50f99a9ff930105e393a692cbfb2185e4cdb4424ae",
+          "dweb:/ipfs/QmVbUQpXNMmMWRiy4FvBNczzq46BMGfUoBikvSHNiCxVTq"
+        ],
+        "license": "MIT"
+      },
+      "script/DeployGpuContract.s.sol": {
+        "keccak256": "0x1ebf5d1bafe6ef1202aeadfffd32cfeae9ddf188a835d998818dab3b400a5061",
+        "urls": [
+          "bzz-raw://7203f2db8fc30f828fe1b501dd9177a05125d0e3ec585b5141ca7de5a483fd11",
+          "dweb:/ipfs/QmVQTsaFj7EdV9qdfkKaNNYvWUmj8cYwoKAzZ2tTn1avFW"
+        ],
+        "license": "UNLICENSED"
+      },
+      "src/GPUSharingContract.sol": {
+        "keccak256": "0x476ebe4c891a89c05673a325f1292223376bfe1f13f13b06744dcb1db58b8285",
+        "urls": [
+          "bzz-raw://cb4aa4a7f15ddac5102f94edf7a24a96cf6f9e37d26118820fef4fda4947a4d2",
+          "dweb:/ipfs/QmPfbLbAMAKaSDJbKR2rQCEAZNRuudhVLqJrfCGT1wjY5p"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "script/DeployGpuContract.s.sol",
+    "id": 42928,
+    "exportedSymbols": {
+      "DeployGPUContract": [
+        42927
+      ],
+      "GPUSharingContract": [
+        43420
+      ],
+      "Script": [
+        2405
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:405:19",
+    "nodes": [
+      {
+        "id": 42893,
+        "nodeType": "PragmaDirective",
+        "src": "39:23:19",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 42895,
+        "nodeType": "ImportDirective",
+        "src": "64:44:19",
+        "nodes": [],
+        "absolutePath": "lib/forge-std/src/Script.sol",
+        "file": "forge-std/Script.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 42928,
+        "sourceUnit": 2406,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 42894,
+              "name": "Script",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 2405,
+              "src": "72:6:19",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 42897,
+        "nodeType": "ImportDirective",
+        "src": "109:65:19",
+        "nodes": [],
+        "absolutePath": "src/GPUSharingContract.sol",
+        "file": "../src/GPUSharingContract.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 42928,
+        "sourceUnit": 43421,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 42896,
+              "name": "GPUSharingContract",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 43420,
+              "src": "117:18:19",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 42927,
+        "nodeType": "ContractDefinition",
+        "src": "176:268:19",
+        "nodes": [
+          {
+            "id": 42926,
+            "nodeType": "FunctionDefinition",
+            "src": "218:224:19",
+            "nodes": [],
+            "body": {
+              "id": 42925,
+              "nodeType": "Block",
+              "src": "269:173:19",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 42905,
+                        "name": "vm",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2350,
+                        "src": "279:2:19",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Vm_$13464",
+                          "typeString": "contract Vm"
+                        }
+                      },
+                      "id": 42907,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "282:14:19",
+                      "memberName": "startBroadcast",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 12367,
+                      "src": "279:17:19",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                        "typeString": "function () external"
+                      }
+                    },
+                    "id": 42908,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "279:19:19",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 42909,
+                  "nodeType": "ExpressionStatement",
+                  "src": "279:19:19"
+                },
+                {
+                  "assignments": [
+                    42912
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 42912,
+                      "mutability": "mutable",
+                      "name": "gpuSharingContract",
+                      "nameLocation": "327:18:19",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 42925,
+                      "src": "308:37:19",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GPUSharingContract_$43420",
+                        "typeString": "contract GPUSharingContract"
+                      },
+                      "typeName": {
+                        "id": 42911,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 42910,
+                          "name": "GPUSharingContract",
+                          "nameLocations": [
+                            "308:18:19"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 43420,
+                          "src": "308:18:19"
+                        },
+                        "referencedDeclaration": 43420,
+                        "src": "308:18:19",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_GPUSharingContract_$43420",
+                          "typeString": "contract GPUSharingContract"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 42917,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 42915,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "NewExpression",
+                      "src": "348:22:19",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_GPUSharingContract_$43420_$",
+                        "typeString": "function () returns (contract GPUSharingContract)"
+                      },
+                      "typeName": {
+                        "id": 42914,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 42913,
+                          "name": "GPUSharingContract",
+                          "nameLocations": [
+                            "352:18:19"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 43420,
+                          "src": "352:18:19"
+                        },
+                        "referencedDeclaration": 43420,
+                        "src": "352:18:19",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_GPUSharingContract_$43420",
+                          "typeString": "contract GPUSharingContract"
+                        }
+                      }
+                    },
+                    "id": 42916,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "348:24:19",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GPUSharingContract_$43420",
+                      "typeString": "contract GPUSharingContract"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "308:64:19"
+                },
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "id": 42918,
+                        "name": "vm",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2350,
+                        "src": "382:2:19",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Vm_$13464",
+                          "typeString": "contract Vm"
+                        }
+                      },
+                      "id": 42920,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "385:13:19",
+                      "memberName": "stopBroadcast",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 12380,
+                      "src": "382:16:19",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                        "typeString": "function () external"
+                      }
+                    },
+                    "id": 42921,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "382:18:19",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 42922,
+                  "nodeType": "ExpressionStatement",
+                  "src": "382:18:19"
+                },
+                {
+                  "expression": {
+                    "id": 42923,
+                    "name": "gpuSharingContract",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 42912,
+                    "src": "417:18:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GPUSharingContract_$43420",
+                      "typeString": "contract GPUSharingContract"
+                    }
+                  },
+                  "functionReturnParameters": 42904,
+                  "id": 42924,
+                  "nodeType": "Return",
+                  "src": "410:25:19"
+                }
+              ]
+            },
+            "functionSelector": "c0406226",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "run",
+            "nameLocation": "227:3:19",
+            "parameters": {
+              "id": 42900,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "230:2:19"
+            },
+            "returnParameters": {
+              "id": 42904,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 42903,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42926,
+                  "src": "250:18:19",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_GPUSharingContract_$43420",
+                    "typeString": "contract GPUSharingContract"
+                  },
+                  "typeName": {
+                    "id": 42902,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 42901,
+                      "name": "GPUSharingContract",
+                      "nameLocations": [
+                        "250:18:19"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 43420,
+                      "src": "250:18:19"
+                    },
+                    "referencedDeclaration": 43420,
+                    "src": "250:18:19",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GPUSharingContract_$43420",
+                      "typeString": "contract GPUSharingContract"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "249:20:19"
+            },
+            "scope": 42927,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 42898,
+              "name": "Script",
+              "nameLocations": [
+                "206:6:19"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 2405,
+              "src": "206:6:19"
+            },
+            "id": 42899,
+            "nodeType": "InheritanceSpecifier",
+            "src": "206:6:19"
+          }
+        ],
+        "canonicalName": "DeployGPUContract",
+        "contractDependencies": [
+          43420
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          42927,
+          2405,
+          2366,
+          2354,
+          11886,
+          6570,
+          4516
+        ],
+        "name": "DeployGPUContract",
+        "nameLocation": "185:17:19",
+        "scope": 42928,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 19
+}
